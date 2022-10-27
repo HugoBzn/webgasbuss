@@ -14,7 +14,7 @@
           />
         </div>
         <div>
-          <label for="Latitud" class="block mb-2 text-sm font-medium text-white">Last name</label>
+          <label for="Latitud" class="block mb-2 text-sm font-medium text-white">Latitud</label>
           <input
             type="text"
             id="Latitud"
@@ -49,12 +49,12 @@
       </div>
       <button
         type="submit"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+        class="mt-16 col-start-3 col-end-5 mb-4 transition duration-300 ease-in-out centertext-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
       >
         Ver listado
       </button>
       <button
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+        class="mt-16 col-start-3 col-end-5 mb-4 transition duration-300 ease-in-out centertext-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
         @click="urlAPI"
       >
         Armar
@@ -83,11 +83,11 @@ const urlAPI = () => {
   url.value = `https://www.inegi.org.mx/app/api/denue/v1/consulta/buscar/${condicion.value}/${latitud.value},${longitud.value}/${metros.value}/${token.value}`;
 };
 
+const emit = defineEmits(['receivedData']);
+
 // Metodo GET
-const getData = () => {
-  (async function () {
-    const res = await axios.get(url.value);
-    data.value = res.data;
-  })();
+const getData = async () => {
+  const res = await axios.get(url.value);
+  emit('receivedData', res.data);
 };
 </script>

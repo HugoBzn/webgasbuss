@@ -7,8 +7,13 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
   ],
+  corePlugins: {
+    aspectRatio: false,
+  },
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    '@tailwindcss/aspect-ratio'
+  ],
 }

@@ -1,13 +1,9 @@
 <template>
-    <div>
-        <h1>Hola</h1>
-    </div>
+  <div>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

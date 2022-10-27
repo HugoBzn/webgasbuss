@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url("@/assets/images/br01.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: system-ui;
+    color: white;
+}
+
+#mapContainer01 {
+    width: 100%;
+    height: 250px;
+    box-shadow: 5px 5px 5px #888;
+}
+#mapContainer02 {
+    width: 100%;
+    height: 250px;
+    box-shadow: 5px 5px 5px #888;
+}
+#mapContainer03 {
+    width: 100%;
+    height: 250px;
+    box-shadow: 5px 5px 5px #888;
+}
+#mapContainer04 {
+    width: 100%;
+    height: 250px;
+    box-shadow: 5px 5px 5px #888;
+}

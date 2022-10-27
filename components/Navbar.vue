@@ -3,7 +3,7 @@
     <nav class="container py-2 mx-auto md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
         <NuxtLink to="/" class="text-xl font-bold text-gray-100 md:text-2xl hover:text-indigo-400">
-          <img src="@/assets/images/GasBuss.png" class="rounded-full scale-100" width="70px" />
+          <img src="@/assets/images/GasBuss.png" class="rounded-lg scale-100" width="70px" />
         </NuxtLink>
         <!-- Mobile menu button -->
         <div @click="toggleNav" class="flex md:hidden">

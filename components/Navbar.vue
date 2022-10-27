@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-r from-blue-900 to-red-700">
+  <div class="bg-gradient-to-r from-blue-900 to-black-900">
     <nav class="container py-2 mx-auto md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
         <NuxtLink to="/" class="text-xl font-bold text-gray-100 md:text-2xl hover:text-indigo-400">

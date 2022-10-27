@@ -1,6 +1,6 @@
 <template>
   <div class="px-6 py-6">
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-4">
       <div class="border border-blue-600 rounded-lg">
         <p></p>
       </div>
